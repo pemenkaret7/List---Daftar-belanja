@@ -1,0 +1,156 @@
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #edeef0;
+}
+.page{
+    display: flex;
+    background: #edeef0;
+    justify-content: center;
+    height: 100%;
+}
+.page > * {
+    padding: 1rem;
+}
+.daftar{
+    display: flex;
+    outline: 5px solid #dfdfdf;
+    border-radius: 10px;
+    width: 540px;
+    height: 100%;
+    padding: 10px;
+    margin-right: 10px;
+}
+.daftar, .daftar .container, .daftar .judul, .daftar h4{
+    background: #76aca3;
+    color: #ffffff;
+    font-size: 20px;
+    border-color: #ffffff !important;
+    border-width: 4px;
+}
+.totalHarga span{
+  display: flex;
+  background: #76aca3;
+  color: #ffffff;
+  font-size: 20px;
+  border-color: #ffffff !important;
+  border-width: 4px;
+}
+.sidebar {
+    display: flex;
+    outline: 5px solid #76aca7;
+    border-radius: 10px;
+    width: 15rem;
+    height: 100%;
+    padding: 10px;
+}
+.sidebar, .sidebar .container, .sidebar .judul, .sidebar label, .sidebar h4{
+  background-color: #ffffff;
+  color: #60797a;
+  font-size: 16px;
+  border-color: #60797a;
+  border-width: 4px;
+}
+.container {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.judul{
+    border-bottom: 1px solid black;
+}
+label{
+    font-size: 14px;
+    font-weight: 500;
+    background-color: white;
+}
+input{
+    border: 3px solid;
+    border-radius: 10px;
+    border-color: #60797a;
+    width: auto;
+    height: 30px;
+    padding-left: 15px;
+}
+input::placeholder{
+    font-size: 10px;
+}
+.btn-tambah{
+    height: 30px;
+    border-radius: 10px;
+}
+ul{
+  background: #76aca3;
+}
+ul li{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    font-size: 17px;
+    padding: 10px 0px 10px 10px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    word-wrap: break-word;
+    background: #76aca3;
+  }
+  ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("../img/unchecked.png");
+    background-size: cover;
+    background-position: center;
+    top: 5px;
+    left: -30px;
+  }
+  ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+  }
+  ul li.checked::before{
+    background-image: url("../img/checked.png");
+  }
+  ul li span{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    right: 0;
+    top: 5px;
+    /* width: 40px; */
+    font-size: 22px;
+    color: #555;
+    text-align: center;
+    background: #76aca3;
+  }
+  ul li span#hapus-item{
+    position: absolute;
+    margin-right: 10px;
+  }
+  ul li span.checked{
+    color: #555;
+    text-decoration: line-through;
+  }
+  .nama-belanja{
+    color: #ffffff;
+    font-size: 16px;
+    width: 100%;
+  }
+  .harga{
+    font-size: 14px;
+    color: #ffffff;
+    width: 100%;
+  }
+  .btn-tambah{
+    color: #ffffff;
+    font-weight: 500;
+    background-color: #60797a;
+    border-color: #CBC0D3;
+    border-width: 3px;
+  }
+  .btn-tambah:hover{
+    background-color: #CBC0D3;
+    color: #FEEAFA;
+  }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Belanja</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page">
+        <div class="daftar">
+            <div class="container">
+                <div class="judul">
+                    <h4>Daftar Belanja</h4>
+                </div>
+                <ul id="list-belanja"></ul>
+                <div class="totalHarga">
+                    <div class="container">
+                        <div class="judul">
+                            <h4>Total Harga</h4>
+                        </div>
+                        <span id="total" class="spanTotalHarga"> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="container">
+                <div class="judul">
+                    <h4>Tambah Daftar</h4>
+                </div>
+                <label for="">Nama</label>
+                <input type="text" id="input-belanja" placeholder="Masukkan Nama Barang" required>
+                <label for="">Harga</label>
+                <input type="text" id="input-harga" placeholder="Masukkan Harga Barang" required>
+                <button class="btn-tambah" onclick="tambahBelanja()">Tambah</button>
+            </div> 
+        </div>
+      </div>
+      <script src="js/script.js"></script>
+      <script src="https://unpkg.com/imask"></script>
+</body>
+</html>
